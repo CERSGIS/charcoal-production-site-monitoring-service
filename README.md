@@ -53,43 +53,15 @@ The Charcoal Production Monitoring service, has a monitoring platform with infor
 ![Charcoal-workflow](<images/Workflow/Charcoal Workflow.jpg>)
 
 ## Project Partners
-<style>
-.main{
-    display: flex;
-}
-
-.gallery { 
-    width: 20%;
-    height: 50%;
-    margin-right: 3%;
-    
-    /* display: inline-grid; */
-    
-}
-.gallery img {
-    width: 100%;
-    height: 100px;
-}
-
-</style>
-<div class="main">
-<div class="gallery" >
-<img src="./images/Logos/cersgis-logo.png" alt="Trolltunga Norway">
-</div>
-<div class="gallery" >
-<img src="./images/Logos/SERVIR_Logo.png" alt="Trolltunga Norway" >
-</div>
-<div class="gallery" >
-<img  src="./images/Logos/nasa.png" alt="Trolltunga Norway">
-</div>
-
-<div class="gallery" >
-<img   src="./images/Logos/USAID.png" alt="Trolltunga Norway">
-</div>
-
-<div class="gallery" >
-<img  src="./images/Logos/ICRISAT-1.jpg" alt="Trolltunga Norway">
-</div>
-</div>
 
 
+<table style="border: 0;">
+  <tr width="100%"> 
+    <td><img src="./images/Logos/cersgis-logo.png" width="800" height="50"></td>
+    <td><img src="./images/Logos/SERVIR_Logo.png" width="500" height="50"></td>
+    <td><img src="./images/Logos/nasa.png" width="500" ></td>
+    <td><img src="./images/Logos/USAID.png" width="1000"></td>
+    <td><img src="./images/Logos/ICRISAT-1.jpg" width="600"></td>
+  </tr>
+</table>
+</br>
