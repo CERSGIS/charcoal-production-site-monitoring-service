@@ -38,7 +38,7 @@ The Charcoal Production Monitoring service, has a monitoring platform with infor
   
 
 ## Methodology and Workflow
- The Charcoal Production Monitoring service started with the use of Sentinel-2 imagery and the Planet monthly mosaic. While useful, this method was hindered by weather (cloud cover), land cover variations, and limited data availability. The current phase of the project employs high resolution image from Google Earth Pro other open source softwares like QGIS, Open Foris Collect and Collect Earth. The method for the detection of the charcoal production sites involves some key steps:
+ The Charcoal Production Monitoring service started with the use of Sentinel-2 imagery and the Planet monthly mosaic. While useful, this method was hindered by weather (cloud cover), land cover variations, and limited data availability. The current phase of the project employs high resolution image from Google Earth Pro and other open source softwares like QGIS, Open Foris Collect and Collect Earth. The method for the detection of the charcoal production sites involves some key steps:
 
 * Survey Design :The design of the survey for the collection process is created using Open Foris Collect. It involves creating a structured approach to gather information from the charcoal districts. It encompasses various elements such as creating a survey from scratch, importing an already existing survey, and a database to review/preview completed and uncompleted surveys. An effective survey design ensures that the collected data is reliable, valid, and relevant to the project. Overall, a well-designed survey is essential for obtaining accurate and meaningful data to inform decision-making, research, or policy development.
 
