@@ -14,20 +14,24 @@ Centre for Remote Sensing and Geographic Information Services
 (CERSGIS), is collaborating with local governments and non-governmental
 organizations to develop a charcoal production monitoring service.
 
-Using
-free and open-source satellite data from NASA’s Landsat suite, current
+Using free and open-source satellite data from NASA’s Landsat suite, current
 charcoal production sites are being mapped with pertinent information
 shared at the district government level for more informed environmental
 planning. This monitoring service will also incoporate a training for stakeholders in rural communities on how to use the mobile application to synchronize the position current production sites.
 
 The Charcoal Production Monitoring service, has a monitoring platform with information on all charcoal production sites in project districts in the savanna landscape. This provides the necessary spatial data input to decision-makers and partners interested, who will use the information to target areas for remediation and landscape restoration activities. In addition to the monitoring platform is a mobile application for collecting data on the field.
 
+## Rationale
+Charcoal production degrades environmental services through forest degradation, soil fertility loss, erosion, biodiversity loss, wildfires, and air quality. In Ghana, like in most West African countries, charcoal is the major fuel for domestic cooking in urban areas, produced by rural communities in areas normally under the administration of traditional and district authorities. These local communities and authorities lack adequate information to address the negative environmental impacts caused by charcoal production. 
+
+In spite of initiatives by non-state actors such as A Rocha and Solidaridad to strengthen community capacity to engage in policy discussions and participate in land use planning, the information gap persists. Addressing this pressing issue requires effective mechanisms for sharing information about charcoal production at the national, district and community level. By bridging the information gap, we can proactively address the adverse impacts of charcoal production and foster a more sustainable approach that balances the needs of both communities and the environment.
+
 
 ## Goals and Objectives
 * Support the development of a sustainable charcoal value chain through earth observation technology intervention and capacity building.
-* Co-design and co-develop a web based charcoal production site monitoring and decision support portal
-* Engaing national, district and traditional authorities to secure their buy-in.
-* Identify current Land Use/Land Cover(LULC) type in production areas.
+* Co-design and co-develop a web based charcoal production site monitoring and decision support portal.
+* Engage national, district and traditional authorities to secure their buy-in.
+* Identify Land Use/Land Cover(LULC) type in production areas.
 
 
   
@@ -52,8 +56,8 @@ The Charcoal Production Monitoring service, has a monitoring platform with infor
 
 <table style="border: 0;">
   <tr width="100%"> 
-    <td><img src="./images/Logos/cersgis-logo.png" width="800" height="50"></td>
-    <td><img src="./images/Logos/SERVIR_Logo.png" width="500" height="50"></td>
+    <td><img src="./images/Logos/cersgis-logo.png" width="800" height=""></td>
+    <td><img src="./images/Logos/SERVIR_Logo.png" width="500" height=""></td>
     <td><img src="./images/Logos/nasa.png" width="500" ></td>
     <td><img src="./images/Logos/USAID.png" width="1000"></td>
     <td><img src="./images/Logos/ICRISAT-1.jpg" width="600"></td>
