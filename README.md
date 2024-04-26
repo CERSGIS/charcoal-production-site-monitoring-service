@@ -18,10 +18,7 @@ Using
 free and open-source satellite data from NASA’s Landsat suite, current
 charcoal production sites are being mapped with pertinent information
 shared at the district government level for more informed environmental
-planning. This monitoring service will also incorporate a text messaging
-service for mobile phones to disseminate the location of approved
-production sites (and protected areas to avoid) to stakeholders in rural
-communities.
+planning. This monitoring service will also incoporate a training for stakeholders in rural communities on how to use the mobile application to synchronize the position current production sites.
 
 The Charcoal Production Monitoring service, has a monitoring platform with information on all charcoal production sites in project districts in the savanna landscape. This provides the necessary spatial data input to decision-makers and partners interested, who will use the information to target areas for remediation and landscape restoration activities. In addition to the monitoring platform is a mobile application for collecting data on the field.
 
@@ -30,9 +27,7 @@ The Charcoal Production Monitoring service, has a monitoring platform with infor
 * Support the development of a sustainable charcoal value chain through earth observation technology intervention and capacity building.
 * Co-design and co-develop a web based charcoal production site monitoring and decision support portal
 * Engaing national, district and traditional authorities to secure their buy-in.
-* Generate anciliary dataset for the charcoal production districts.
-* Generate maps for charcoal districts.
-* Train stakeholders on the usage of the mobile application.
+* Identify current Land Use/Land Cover(LULC) type in production areas.
 
 
   
@@ -45,7 +40,7 @@ The Charcoal Production Monitoring service, has a monitoring platform with infor
 * Creation of Grids : The grids creation was done using QGIS open source software. This was done to provide a clear and organized framework during the collection process. 10km x 10km grids were generated over the identified charcoal districts.  250m x250m grids was later superimposed on the 10km x 10km grids and saved in an ESRI shapefile formart. Uniques codes are assigned to the grids generated since each charcoal district has different codes. The grids were created to provide a structured way to organize and compare data, making it easier to identify patterns, trends, and relationships. 
 
 
-* Google Earth Pro : The generated grids are imported into Google Earth Pro for the collection process to begin. Placemarks are used to identify and indicate whether the production site is a scar or kiln on the satellite image. A detected production site is described by it's dimension (measured in meters), date of observance and type (wheter a scar or kiln). The scar/kiln detected are then saved in KML format.
+* Google Earth Pro : The generated grids are imported into Google Earth Pro for the collection process to begin. Placemarks are used to identify and indicate whether the production site is a scar or kiln on the satellite image. A detected production site is described by it's dimension (measured in meters), date of observance and type (whether a scar or kiln). The scar/kiln detected are then saved in KML format.
 
 * Validation of collected points : The detected charcoal sites and survey are imported using the Open Foris Collect Earth desktop version into Google Earth Pro. The points are seen as a plot. When a plot is clicked, the survey questions to be answered pops up and each question is answered and saved. The detected charcoal scars and kilns are validated upon answering all survey questions, ensuring data accuracy and reliability for subsequent analysis and decision-making processes.
 
