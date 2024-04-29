@@ -1,0 +1,39 @@
+// Add AOI
+var AOI = ee.FeatureCollection("projects/ee-boatennana200/assets/Project_District1")
+// SET DATES FOR IMAGE
+var stDate = '2020-01-01';
+var endDate = '2020-12-31';
+
+
+
+var dataset = ee.ImageCollection('ESA/WorldCover/v100')
+.filterBounds(AOI)
+.filterDate(stDate, endDate)
+.map(function(img){return img.clip(AOI)})
+.first()
+
+// Classification
+var classify = dataset.select('Map');
+var from = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+var to = [0, 0, 0,40, 50, 60, 0, 0, 0, 0]
+var reclassed = classify.remap(from, to)
+var b = reclassed.selfMask()
+  
+var visualization = {
+  //bands: ['Map'],
+  min: 0,
+  max: 80,
+  palette: ['397D49', 'fff687', '33ff0e', '1936ff', 'C4281B',
+  'bcf0ff']
+};
+
+
+Map.addLayer(b, visualization, 'Landcover');
+
+Export.image.toDrive({
+  image: b.float(),
+  description: 'built_combine',
+  maxPixels: 1e13,
+  scale: 10,
+  region: AOI
+});
