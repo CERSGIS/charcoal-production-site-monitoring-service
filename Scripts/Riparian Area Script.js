@@ -1,0 +1,39 @@
+Scripts to generate Riparian using our Area of interest
+
+//Add AOI
+var AOI = ee.FeatureCollection("projects/ee-boatennana200/assets/Sisala_District_Boundary")
+
+
+//-----------------------
+var srtm = ee.Image('srtm90_v4').clip(AOI);
+Map.addLayer(srtm, {min: 50, max: 400},'DEM',false);
+// Map.addLayer(AOI,{},'West Gonja',false);
+//
+//
+//Clip image to Area of interest
+
+var dem_aoi=srtm.clip(AOI);
+//-------------------------------------------------------------------------------------
+
+
+//EXTRACT RIVER BEDS
+var dem_aoi=srtm.clip(AOI);
+//-------------------------------------------------------------------------------------
+  var kernel5 = ee.Kernel.euclidean({radius: 30});
+  var X5=dem_aoi.reduceNeighborhood(ee.Reducer.min(),kernel5);
+  var D5=(dem_aoi.subtract(X5)).abs();
+//--------------------------------------------------------------------------------------
+//Map.addLayer(X5, {min: 50, max: 400},'Minimum filter DEM');
+// Map.addLayer(D5, {min: 0, max: 50},'Difference DEM');
+Map.addLayer(D5.gt(10), {min: 0, max: 1},'Riparian areas');
+//
+//
+//
+// Export the image, specifying scale and region.
+Export.image.toDrive({
+  image: D5,
+  description: 'RiparianAreas',
+  scale: 30,
+  region: AOI
+});
+
